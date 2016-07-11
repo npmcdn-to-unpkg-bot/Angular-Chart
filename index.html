@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>AngularJS App Example</title>
+    <link rel="icon" type="image/png" href="assets/images/favicon.ico">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href='http://fonts.googleapis.com/css?family=Lato:300,400,700' rel='stylesheet' type='text/css'>
+    <!-- build:css assets/css/styles.css -->
+    <!-- endbuild -->
+</head>
+<body ng-app="myApp">	
+	<div ng-view>
+		<energy-chart></energy-chart>
+	</div>
+
+    <!-- ASSETS -->
+	<link href="content/css/common.css" rel='stylesheet' >
+	
+	<script src="bower_components/angular/angular.min.js"></script>
+	<script src="bower_components/jquery/dist/jquery.min.js"></script>
+	<script src="bower_components/highcharts/highcharts.js"></script>
+	<script src="bower_components/highcharts/modules/exporting.js"></script>
+
+    <!-- MODULES -->
+    <script src="app/app.js"></script>	
+	<script src="app/chart/energychart.controller.js")"></script>
+	<script src="app/chart/energychart.service.js")"></script>	
+	<script src="app/chart/energychart.directive.js")"></script>
+	
+</body>
+</html>
