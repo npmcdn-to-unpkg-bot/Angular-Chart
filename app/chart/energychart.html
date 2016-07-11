@@ -1,4 +1,8 @@
 <div ng-controller="myController">
-	<select ng-model="periodValue" ng-change="updatePeriod(periodValue)" ng-options="opt for opt in options"></select>
-	<div id="container" style="min-width: 310px; height: 400px; margin: 0 auto"></div>
+	<div class="loading" ng-show="loading"><img id="mySpinner" src="content/images/spinner.gif" /></div>	
+	<div id="container"></div>	
+	<div class="periodSelect">
+		<label>Select period to load data</label>
+		<select ng-model="periodValue" ng-change="updatePeriod(periodValue)" ng-options="opt for opt in options"></select>
+	</div>
 </div>

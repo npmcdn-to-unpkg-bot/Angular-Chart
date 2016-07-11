@@ -14,5 +14,4 @@ app.service('ChartService', function($http, $q) {
             return $q.when(responseData);
           }
 	}
-
 });
